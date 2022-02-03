@@ -14,7 +14,7 @@ view.addSubview(imageView)
 
 PlaygroundPage.current.liveView = view
 
-let imageURL = URL(string: K.URL.imageURLs.first!)!
+let imageURL = URL(string: K.URL.imageURLs.randomElement()!)!
 
 
 /// Classical way
@@ -78,7 +78,9 @@ fetchImageInAClassicalWay()
 //fetchImageWithURLSession()
 //etchImageWithDispatchWorkItem()
 //fetchImageWithAsyncLoadWrapper(url: imageURL, runQueue: .global(qos: .utility), completionQueue: .main) { image, error in
-//    guard error == nil else { print(error ?? "Unknown Error"); return }
+//    guard error == nil else { print(error ?? "Unknown Error")
+//        return
+//    }
 //    imageView.image = image
 //}
 

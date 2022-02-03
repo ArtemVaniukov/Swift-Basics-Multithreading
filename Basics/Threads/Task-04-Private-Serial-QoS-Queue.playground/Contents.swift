@@ -58,7 +58,7 @@ func runTest2() {
     print("\n")
     print("------------------------------------------------")
     print("   Private .serial Q1 - .userInitiated     ")
-    print("                   Q2 - .background     ")
+    print("                   Q2 - .background        ")
     print("------------------------------------------------")
 
     serialUserInititatedQueue.async { tasker.task("😊") }
@@ -75,7 +75,7 @@ func runTest3() {
     print("------------------------------------------------")
     print("   asyncAfter(.userInteractive) на Q2")
     print("   Private .serial Q1 - .utility     ")
-    print("                   Q2 - .background     ")
+    print("                   Q2 - .background  ")
     print("------------------------------------------------")
     
     let serialUtilityQueue = DispatchQueue(label: "com.basics.threads.task4.serialQueue.utility",
@@ -90,5 +90,5 @@ func runTest3() {
 
 /// Switch between tests
 runTest1()
-//runTest2()
-//runTest3()
+runTest2()
+runTest3()

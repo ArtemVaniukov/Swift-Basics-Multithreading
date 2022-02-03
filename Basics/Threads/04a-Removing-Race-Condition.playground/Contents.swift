@@ -18,6 +18,8 @@ func changeValue(variant: ExecutionType) {
     print("\(value) - \(variant.rawValue)")
 }
 
+
+
 print("--- Removing Race Condition with Sync Execution ---")
 
 /// Давайте заменим метод async на sync:

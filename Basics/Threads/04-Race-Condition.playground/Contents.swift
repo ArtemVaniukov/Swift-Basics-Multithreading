@@ -20,6 +20,8 @@ func changeValue(variant: ExecutionType) {
     print("\(value) - \(variant.rawValue)") // 11, 15
 }
 
+
+
 print("--- Race Condition Imitation ---")
 
 // Async call
